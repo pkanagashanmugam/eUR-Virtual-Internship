@@ -52,21 +52,23 @@ int main(){
     //Getting value for number of rotations 
     printf("\nEnter value for list rotation : ");
     scanf("%d",&rotate);
-    //Wrapping number of rotations to the length of the linked list
-    rotate%=list_length;
-    node* ptr=head;
-    
-    for(int i=0;i<rotate;i++)
-        ptr=ptr->next;
-    //Redefining pointers 
-    node *new_tail=ptr->previous;
-    ptr->previous->next=NULL;//Assigns the next new tail to NULL
-    ptr->previous=NULL;//Points the previous of new head to NULL
-    tail->next=head;//Points next of current tail to current head
-    head->previous=tail;//Points previous of current head to current tail
-    head=ptr;//Assigns new Head
-    tail=new_tail;//Assigns new Tail
-    
+    if(rotate!=0 && rotate!=list_length){
+        //Wrapping number of rotations to the length of the linked list
+        rotate%=list_length;
+        node* ptr=head;
+        
+        for(int i=0;i<rotate;i++)
+            ptr=ptr->next;
+        //Redefining pointers 
+        node *new_tail=ptr->previous;
+        ptr->previous->next=NULL;//Assigns the next new tail to NULL
+        ptr->previous=NULL;//Points the previous of new head to NULL
+        tail->next=head;//Points next of current tail to current head
+        head->previous=tail;//Points previous of current head to current tail
+        head=ptr;//Assigns new Head
+        tail=new_tail;//Assigns new Tail
+    }else
+        printf("\nNo Rotation required!\n");
     printf("\nList after Rotation: \n");
     print_list();
     printf("\n\nNew Head has the value %d\nNew Tail has the value %d",head->data,tail->data);
