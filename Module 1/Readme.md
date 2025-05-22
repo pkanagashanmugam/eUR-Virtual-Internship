@@ -1,4 +1,4 @@
-# Module 1 - 
+# Module 1 - Quick Refresh on C
 
 **Question 1 Execution :**
 
@@ -24,7 +24,7 @@
 
 The size of the Structure defined in the order int,char,char will have a size of 8 bytes after structure padding.
 ```
-0       4        5        6        7        8
+0       3        4        5        6        7
 +-------+--------+--------+--------+--------+
 | int A | char A | char B |        |        |
 +-------+--------+--------+--------+--------+
@@ -33,10 +33,10 @@ The size of the Structure defined in the order int,char,char will have a size of
 
 The size of the Structure defined in the order char,double,char will have a size of 16 bytes after structure padding.
 ```
-0        1          9        10      11        12
-+--------+----------+--------+--------+--------+
-| char A | double A | char C |        |        |
-+--------+----------+--------+--------+--------+
+0        1        4          11      12        15
++--------+--------+----------+--------+--------+
+| char A |        | double A | char C |        |
++--------+--------+----------+--------+--------+
 ```
 **Question 8 Execution :**
 
