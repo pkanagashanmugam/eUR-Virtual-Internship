@@ -30,8 +30,22 @@ The output of the code can get varied according to the order of execution but th
 
 **Question 6 Execution :**
 
+Race and Deadlocks can be prevented by use of Mutex which stands for Mutual Exclusion. It is used to prevent deadlocks rising out of the critical section of the code. It protects shared resources from concurrent access by multiple threads and locks the critical section for one particular thread and later unlocks it.
+
 **Question 7 Execution :**
 
+| **FORK** | **EXEC**|
+|   :---:  |   :---: |
+|Creates a child process | Replaces the current program with a new program |
+| Returns twice: Once for parent and another for child | Does not return |
+| The child gets a new Process Id different from that of the parent | The Process Id remains the same |
+| Duplicates parent's resources | Replaces existent resources |
+
 **Question 8 Execution :**
+| **PROCESS** | **THREADS**|
+|   :---:     |   :---:    |
+| A program under execution is called a process | Threads are instances/segments of a process |
+| Since they are not lightweight, they take time to terminate | Threads are lightweight processes and take minimal time for execution |
+| Individual process have their own memory | Threads used shared memory |
 
 **Question 9 Execution :**
