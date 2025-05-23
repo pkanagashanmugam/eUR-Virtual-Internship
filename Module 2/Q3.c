@@ -15,6 +15,10 @@ void enqueue(int number){
 }
 
 void display_queue(){
+    if(front ==-1){
+        printf("\nQueue is empty\n");
+        return;
+    }
     int i;
     printf("\nFront --> ");
     for(i=front;i<rear;i++)
@@ -24,8 +28,8 @@ void display_queue(){
 
 void sort_queue(){
     int current_queue_size=rear-front+1;
-    for(int i=0;i<current_queue_size;i++){
-        for(int j=i+1;j<current_queue_size;j++){
+    for(int i=front;i<rear;i++){
+        for(int j=i+1;j<rear;j++){
             if(queue[i]>queue[j]){
                 int temp=queue[i];
                 queue[i]=queue[j];
