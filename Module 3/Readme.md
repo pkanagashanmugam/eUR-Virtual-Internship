@@ -24,9 +24,11 @@ The output of the code given will print a pattern of 2's with **minimum frequenc
 
 **Question 4 Execution :**
 
-The output of the code can get varied according to the order of execution but the output. The output produced will be combination of the following patterns **3 4**, **2 4** and **1 4**
+The output of the code can get varied according to the order of execution but the output. The output produced will be combination of the following patterns **3 4**, **2 4** and **1 4** depending on the execution of fork() by the OS and the conditional statements it is subjected to.
 
 **Question 5 Execution :**
+
+![image](https://github.com/user-attachments/assets/70d25487-b895-4c4a-a38e-a5dd4f8a304d)
 
 **Question 6 Execution :**
 
@@ -49,3 +51,5 @@ Race and Deadlocks can be prevented by use of Mutex which stands for Mutual Excl
 | Individual process have their own memory | Threads used shared memory |
 
 **Question 9 Execution :**
+
+![image](https://github.com/user-attachments/assets/7448c291-a45c-4e1d-84a6-4b751bbd6834)
