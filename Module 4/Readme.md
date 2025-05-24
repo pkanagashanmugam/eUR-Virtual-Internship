@@ -14,8 +14,10 @@ Datagram Socket is one of the two types of socket, other one being Stream Socket
 
 **Question 4 Execution:**
 
+![image](https://github.com/user-attachments/assets/11d11f48-f69b-4a0f-b7fb-7b0821091df5)
 
 **Question 5 Execution:**
 
+![image](https://github.com/user-attachments/assets/cd8ea478-a3e6-40a1-9ace-c062b979b029)
 
 **Question 6 Execution:**
